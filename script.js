@@ -1,0 +1,2 @@
+function up(){var n=document.querySelectorAll('.c.done').length;document.getElementById('pr').textContent=n+' dari 4 sekolah dicap'+(n==4?' 🎉':'');document.getElementById('b').style.width=(n*25)+'%'}
+document.querySelectorAll('.c').forEach(function(e){e.addEventListener('click',function(){e.classList.toggle('done');up()})});
